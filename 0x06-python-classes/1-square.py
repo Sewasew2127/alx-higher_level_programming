@@ -1,10 +1,17 @@
 #!/usr/bin/python3
 
 
+"""
+a class named Square that defines a square based on 0-square.py
+class Square has attributes:
+    size
+"""
+
+
 class Square:
     """
-    class square that has attributes:
-        size
+    the __init__ method run as soon as an object of a class is created.
+    It is useful to do ay initialization
     """
     def __init__(self, size):
         """
