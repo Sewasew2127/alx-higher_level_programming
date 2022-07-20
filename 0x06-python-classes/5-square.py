@@ -20,6 +20,10 @@ class Square:
         if self.__validate_size(size):
             self.__size = size
 
+    """
+        initialization function for our square clasee
+    """
+
     @property
     def size(self):
         """
