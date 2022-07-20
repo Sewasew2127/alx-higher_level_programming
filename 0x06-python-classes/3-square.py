@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+a class named Square that defines a square based on 1-square.py
+class Square has attributes:
+    size
+"""
+
 
 class Square:
     """
