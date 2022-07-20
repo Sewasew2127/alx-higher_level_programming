@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
+
 """
 empty class for Square that defines a square
 imporing any module is not allowed
 """
+
 
 class Square:
     """
@@ -10,4 +13,3 @@ class Square:
     imporing any module is not allowed
     """
     pass
-
