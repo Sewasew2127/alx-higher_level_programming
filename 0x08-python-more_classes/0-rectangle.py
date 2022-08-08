@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""An empty rectangle class"""
 
 
-class Rectangle():
-    """empty rectangle class for later use
-    """
+class Rectangle:
+    """Property retriever, for retreiving"""
     pass
