@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-
-
-"""
-function max_index:
-to find the max integer in a list
-arument: list
+"""Module to find the max integer in a list
 """
 
 
