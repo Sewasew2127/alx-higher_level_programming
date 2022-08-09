@@ -1,20 +1,15 @@
 #!/usr/bin/python3
 
-"""
-function: add_integer
+"""Return the sum
 a and b must be integers or floats,
-otherwise raise a TypeError exception with
-the message a must be an integer or
-b must be an integer
+otherwise raise a TypeError exception
 a and b must be first casted to integers if they are float
-unit tests located in tests/0-add_integer.txt"""
+"""
 
 
 def add_integer(a, b=98):
-    """
-    adds an integer
+    """adds an integer
     unit tests located in tests/0-add_integer.txt
-    checks for type errors
     """
     if not isinstance(a, int):
         if isinstance(a, float):
