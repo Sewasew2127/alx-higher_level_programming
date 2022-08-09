@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+add_integer - a function that add 
+two integers and check there types for
+errors
+"""
+
 
 def add_integer(a, b=98):
     """
