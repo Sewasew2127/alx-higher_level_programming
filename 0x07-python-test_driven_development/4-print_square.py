@@ -1,15 +1,30 @@
 #!/usr/bin/python3
-"""Printing square"""
+
+"""
+function print_squre
+prints a square of given size
+unit tests are located in tests/4-print_square.txt
+"""
 
 
 def print_square(size):
-    """Prints a square with the character '#'"""
-    if type(size) != int:
+    """
+    prints a square of given size
+    unit tests are located in tests/4-print_square.txt
+    """
+    if not isinstance(size, (int, float)):
         raise TypeError("size must be an integer")
-    if size < 0:
-        raise ValueError("size must be >= 0")
-    for x in range(size):
-        for y in range(size):
-            print("#", end='')
+    elif size < 0:
+        if isinstance(size, float):
+            raise TypeError("size must be an integer")
+        else:
+            raise ValueError("size must be >= 0")
+
+    size = int(size)  # if it was a float convert it
+    i = 0
+
+    for i in range(0, size):
+        j = 0
+        for j in range(0, size):
+            print('#', end='')
         print()
-        

@@ -1,27 +1,37 @@
 #!/usr/bin/python3
-"""Matrix division"""
+
+"""
+function: matrix_divided
+Divides all elements of a matrix, 
+elements must be int or float type
+"""
 
 
 def matrix_divided(matrix, div):
-    """Divides every element of a matrix
-    Args:
-        matrix (list): A list of lists of integers
-        or floats div (int/float): The divisor.
-
     """
-
-    if type(div) not in [int, float]:
+    divides all elements of a matrix, elements must be ->
+        int or float type
+    """
+    if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
-    if div == 0:
-        raise ZeroDivisionError(
-            "Each row of the matrix must have the same size")
+        return matrix
+    elif div == 0:
+        raise ZeroDivisionError("division by zero")
+        return matrix
 
-    if not all(len(row) == len(matrix[0]) for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-    if not all(type(num) in [int, float] for row in matrix for num in row):
-        raise TypeError("matrix must be a matrix (list of lists)"
-                        " of integers/floats")
+    prevRowLen = -1
+    new_list = []
+    for row in matrix:
+        if (prevRowLen != len(row) and prevRowLen != -1):
+            raise TypeError("Each row of the matrix must have the same size")
+            return matrix
+        for ele in row:
+            if not isinstance(ele, (int, float)):
+                raise TypeError("matrix must be a matrix (list of lists) of" +
+                                " integers/floats")
+                return matrix
+            else:
+                new_list.append(round(ele / div, 2))
+        prevRowLen = len(row)
 
-    new_matrix = [[eval("{:.2f}".format(num / div)) for num in row]
-                  for row in matrix]
-    return new_matrix
+    return new_list

@@ -1,19 +1,24 @@
 #!/usr/bin/python3
-"""Text indentations"""
 
+
+"""
+function test_indentation:
+prints a string of text with 2 new lines after '.', '?', and ':'
+unit tests located in tests/5-text_indentation.txt
+"""
 
 def text_indentation(text):
-    """Prints a text with 2 new lines
-    Args:
-        text (string): The text to print.
-    Raises:
-        TypeError: If text is not a string.
-
     """
-    special = ['.', '?', ':']
-    if type(text) != str:
-        raise TypeError("text must be string")
-    for x in text:
-        print(x, end='')
-        if x in special:
-            print('\n\n', end='')
+    prints a string of text with 2 new lines after '.', '?', and ':'
+    unit tests located in tests/5-text_indentation.txt
+    """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
+    string = ""
+    specials = ['.', '?', ':']
+    for ch in text:
+        string += ch
+        if ch in specials:
+            string += "\n\n"
+    print(string, end='')

@@ -1,68 +1,29 @@
-A test for the say_my_name function
+===================================
+UNIT TEST FILE FOR 3-say_my_name.py
+===================================
 
-Import the module
->>> import sys
->>> sys.path.insert(1, '../')
->>> lib = __import__("3-say_my_name")
->>> func = lib.say_my_name
->>> fn1 = "Musa"
->>> ln1 = "Kanneh"
->>> fn2 = 4
->>> ln2 = 5
+>>> say_name = __import__('3-say_my_name').say_my_name
+>>> say_name("joe", "bob")
+My name is joe bob
 
+>>> say_name("joe")
+My name is joe 
 
-#Normal Test
->>> func(fn1, ln1)
-My name is Musa Kanneh
+>>> say_name("")
+My name is  
 
-#Type Errors
->>> func(fn1, ln2)
+>>> say_name(42)
 Traceback (most recent call last):
-...
-TypeError: last_name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
+	...
 TypeError: first_name must be a string
 
-
->>> fn2 = 4.3
->>> ln2 = 5.7
-
-
->>> func(fn1, ln2)
+>>> say_name("jordan", 42)
 Traceback (most recent call last):
-...
-TypeError: last name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first name must be a string
-
-
-
->>> fn2 = 3 + 1j
->>> ln2 = []
-
-
->>> func(fn1, ln2)
-Traceback (most recent call last):
-...
+	...
 TypeError: last_name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first_name must be a string
 
->>> fn2 = {}
->>> ln2 = 3 + 1j
-
-
->>> func(fn1, ln2)
+>>> say_name()
 Traceback (most recent call last):
-...
-TypeError: last name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first name must be a string
+	...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+ 

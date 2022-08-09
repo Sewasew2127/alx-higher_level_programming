@@ -1,25 +1,28 @@
 #!/usr/bin/python3
-"""Unittest for max_integer([..])
+"""unit testing module for 6-max_integer_test.py
 """
 import unittest
-max_integer = __import__('6-max_integer').max_integer
+max_int = __import__('6-max_integer').max_integer
 
-"""Test case for the max_integer_function
-"""
+
 class TestMaxInteger(unittest.TestCase):
-    """Test case for the max_integer_function
+    """
+    class for testing 6-max_integer_test.py
     """
 
-    def test_typeErrors(self):
-        self.assertRaises(TypeError, max_integer, 1)
-        self.assertRaises(TypeError, max_integer, 1.3)
-        self.assertRaises(TypeError, max_integer, -3)
-        self.assertRaises(TypeError, max_integer, 2j)
-        self.assertRaises(TypeError, max_integer, [2j, 3])
-        self.assertRaises(TypeError, max_integer, [-2, "90"])
+    def test_max_integer(self):
+        """ test case for normal list of integers w/o negatives
+        """
+        test_list = [1, 2, 3, 8, 4]
+        self.assertEqual(max_int(test_list), 8)
 
-    def test_normalResults(self):
-        self.assertEqual(max_integer([1, 2, 3]), 3)
-        self.assertEqual(max_integer([-1000000, 1, 2, 3]), 3)
-        self.assertEqual(max_integer([-1000000, 10000, 2.5, 3, 10000000000]),
-                         10000000000)
+    def test_max_integer_neg(self):
+        """ test case for normal list of integers w/ negatives
+        """
+        test_list = [1, 2, 3, 8, 4, -40, -400, -12, 0]
+        self.assertEqual(max_int(test_list), 8)
+
+    def test_max_integer_(self):
+        """ test case for empty list
+        """
+        self.assertEqual(max_int([]), None)

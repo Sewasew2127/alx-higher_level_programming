@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
 """
-add_integer - a function that add 
-two integers and check there types for
-errors
+function: add_integer
+arguments: 2
+    a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer
+    a and b must be first casted to integers if they are float
+unit tests located in tests/0-add_integer.txt
+checks for type errors
 """
 
 
