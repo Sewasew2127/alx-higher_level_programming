@@ -1,61 +1,30 @@
-A test to for adding two inteter
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(4, 10)
+14
 
-Import Python module + collections
->>> import sys
->>> sys.path.insert(1, '../')
->>> lib = __import__("0-add_integer")
->>> add_integer = lib.add_integer
+>>> add_integer(3, -10)
+-7
 
-# Normal addition test
->>> add_integer(0)
-98
->>> add_integer(-1)
-97
->>> add_integer(10.5)
-108
-
-# Type Errors
->>> add_integer(10+5j)
+>>> add_integer(3, "holberton")
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer([])
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer({})
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer(set())
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer("")
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
-# Two input addition type errors
->>> add_integer(10, 10+5j)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, [])
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, {})
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, set())
-Traceback (most recent call last):
-...
+	...
 TypeError: b must be an integer
 
->>> add_integer(10, "")
+>>> add_integer("holberton", 3)
 Traceback (most recent call last):
-...
-TypeError: b must be an integer
+	...
+TypeError: a must be an integer
+
+>>> add_integer(3.2, 3)
+6
+
+>>> add_integer(4.9, 4.8)
+8
+
+>>> add_integer(-4.9, -4.8)
+-8
+
+>>> add_integer("holberton", "holberton")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
