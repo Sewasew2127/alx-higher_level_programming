@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""Geometry module.
 
+
+"""Geometry module.
+An empty class
 
 """
 

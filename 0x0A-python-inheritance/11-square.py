@@ -5,6 +5,8 @@
 (task based on 10-square.py
 
 """
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 

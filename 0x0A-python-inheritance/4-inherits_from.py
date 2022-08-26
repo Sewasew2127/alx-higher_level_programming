@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Only sub class of.
-
-
+"A function that returns True if the object is
+an instance of a class t
 """
 
 

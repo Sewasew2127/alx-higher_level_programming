@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Same class or inherit from
-
-
+a function that returns True if the object
+is an instance of,
 """
 
 

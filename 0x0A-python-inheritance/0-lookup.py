@@ -10,9 +10,10 @@ def lookup(obj):
     """
     return dir(obj)
 #!/usr/bin/python3
-"""A functioon that retruns the list of 
-availbale attributes and methods of 
-an object
+
+
+"""A functioon that retruns the list
+ailbale attributes and methods of an object
 """
 
 
