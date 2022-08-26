@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-
-
-""" Improve Geometry.
-
-
+"""
+***********************************
+module with class BaseGeometry
+***********************************
 """
 
 
