@@ -7,6 +7,7 @@ to run:
 *******************************
 """
 
+
 def write_file(filename="", text=""):
     """
     a function that writes a string
