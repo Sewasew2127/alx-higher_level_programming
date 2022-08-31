@@ -7,9 +7,10 @@ to run: ./2-main.py
 *******************************
 """
 
+
 def append_write(filename="", text=""):
     """
-    a function that appends a string 
+    a function that appends a string
     at the end of a text file (UTF8)
     and returns the number of characters added
     """

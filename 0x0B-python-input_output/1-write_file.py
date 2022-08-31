@@ -3,8 +3,8 @@
 
 """
 *******************************
-Supproting file:
-to run: 
+Supproting file:1-main.py
+to run: ./1-main.py
 *******************************
 """
 
@@ -12,7 +12,7 @@ to run:
 def write_file(filename="", text=""):
     """
     a function that writes a string
-    to a text file (UTF8) and returns 
+    to a text file (UTF8) and returnst
     the number of characters written
     """
     with open(filename, "w", encoding="UTF-8") as f:

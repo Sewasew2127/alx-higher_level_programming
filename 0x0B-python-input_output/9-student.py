@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
 *******************************
-Supproting file:
-to run: 
+Supproting file:9-main.py
+to run: ./9-main.py
 *******************************
 """
+
 
 class Student:
     """Student obj"""
