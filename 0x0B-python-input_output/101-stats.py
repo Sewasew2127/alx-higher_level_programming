@@ -18,6 +18,8 @@ class DebugLog:
         self.lines = []
         self.total_size = 0
         self.codes_200 = 0
+        self.codes_301 = 0
+        self.codes_400 = 0
         self.codes_401 = 0
         self.codes_403 = 0
         self.codes_404 = 0
@@ -29,6 +31,7 @@ class DebugLog:
         string = "File size: " + str(self.total_size) + '\n'
         string += "200: " + str(self.codes_200) + '\n'
         string += "301: " + str(self.codes_301) + '\n'
+        string += "400: " + str(self.codes_400) + '\n'
         string += "401: " + str(self.codes_401) + '\n'
         string += "403: " + str(self.codes_403) + '\n'
         string += "404: " + str(self.codes_404) + '\n'
@@ -45,6 +48,8 @@ class DebugLog:
                 self.codes_200 += 1
             elif "301" in self.lines[i]:
                 self.codes_301 += 1
+            elif "400" in self.lines[i]:
+                self.codes_400 += 1
             elif "401" in self.lines[i]:
                 self.codes_401 += 1
             elif "403" in self.lines[i]:
