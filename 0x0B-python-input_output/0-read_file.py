@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-Protototype: def read_file(filename)
-
+*******************************
+Supproting file: 0-main.py
+to run:./0-main.py 
+*******************************
 """
-
 
 def read_file(filename=""):
     """

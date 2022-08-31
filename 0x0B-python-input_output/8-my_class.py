@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" My class module
+"""
+*******************************
+Supproting file:
+to run: 
+*******************************
 """
 
 class MyClass:

@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-"""Module for saving to json"""
+"""
+*******************************
+Supproting file:add_item.json
+to run: ./7-add_item.py
+a script that adds all arguments to a Python list,
+and then save them to a file
+*******************************
+"""
 import json
 import os.path
 import sys

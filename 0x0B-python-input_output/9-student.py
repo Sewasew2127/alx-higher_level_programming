@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-"""method for student creation"""
-
+"""
+*******************************
+Supproting file:
+to run: 
+*******************************
+"""
 
 class Student:
     """Student obj"""
