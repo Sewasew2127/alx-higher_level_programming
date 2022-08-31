@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""module for use as base class
+"""
+****************************
+module for use as base class
+*****************************
 """
 
 
@@ -107,7 +110,7 @@ class Base:
         try:
             with open(cname + '.json', 'r', encoding='utf-8') as myFile:
                 text = myFile.read()
-        except:
+        except cname.DoesNotExist:
             return []
 
         inst_list = []
@@ -140,7 +143,7 @@ class Base:
         try:
             with open(cname + '.csv', 'r', encoding='utf-8') as myFile:
                 lines = myFile.readlines()
-        except:
+        except cname.DoesNotExist:
             return []
 
         inst_list = []
